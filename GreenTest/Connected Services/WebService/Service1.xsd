@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfstations">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="stations" nillable="true" type="tns:stations" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstations" nillable="true" type="tns:ArrayOfstations" />
+  <xs:complexType name="stations">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="client_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="clients" nillable="true" type="tns:clients" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="lat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="long" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mac_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="questions" nillable="true" type="tns:ArrayOfquestions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="stations" nillable="true" type="tns:stations" />
+  <xs:complexType name="clients">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="business_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="stations" nillable="true" type="tns:ArrayOfstations" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="clients" nillable="true" type="tns:clients" />
+  <xs:complexType name="ArrayOfquestions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="questions" nillable="true" type="tns:questions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfquestions" nillable="true" type="tns:ArrayOfquestions" />
+  <xs:complexType name="questions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="answer_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="answers" nillable="true" type="tns:answers" />
+      <xs:element minOccurs="0" name="date_end" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="date_start" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="label" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="station_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="stations" nillable="true" type="tns:stations" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="questions" nillable="true" type="tns:questions" />
+  <xs:complexType name="answers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="count_left" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="count_right" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="questions" nillable="true" type="tns:ArrayOfquestions" />
+      <xs:element minOccurs="0" name="response_left" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="response_right" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="answers" nillable="true" type="tns:answers" />
+  <xs:complexType name="ArrayOfSPI_QuestionAnswer_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SPI_QuestionAnswer_Result" nillable="true" type="tns:SPI_QuestionAnswer_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSPI_QuestionAnswer_Result" nillable="true" type="tns:ArrayOfSPI_QuestionAnswer_Result" />
+  <xs:complexType name="SPI_QuestionAnswer_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="answer_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="count_left" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="count_right" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="date_end" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="date_start" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="label" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="response_left" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="response_right" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="station_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SPI_QuestionAnswer_Result" nillable="true" type="tns:SPI_QuestionAnswer_Result" />
+</xs:schema>

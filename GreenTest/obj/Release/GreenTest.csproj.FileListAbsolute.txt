@@ -1,0 +1,10 @@
+c:\users\romai\source\repos\GreenTest\GreenTest\bin\Release\GreenTest.exe.config
+c:\users\romai\source\repos\GreenTest\GreenTest\bin\Release\GreenTest.exe
+c:\users\romai\source\repos\GreenTest\GreenTest\bin\Release\GreenTest.pdb
+c:\users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.Form1.resources
+c:\users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.Properties.Resources.resources
+c:\users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.csproj.GenerateResource.cache
+c:\users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.csproj.CoreCompileInputs.cache
+c:\users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.exe
+c:\users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.pdb
+C:\Users\romai\source\repos\GreenTest\GreenTest\obj\Release\GreenTest.csprojResolveAssemblyReference.cache
